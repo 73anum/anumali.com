@@ -1,1 +1,198 @@
+/* Reset Browser Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1 span {
+    font-weight: 700;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 14px;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #4CAF50;
+    border-radius: 4px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+   object-fit: cover;
+}
+
+.profile-info {
+    flex: 3 1 300px;
+    padding: 20px;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-links li a:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+section ul,
+section ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+section a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-top: 3px solid #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
