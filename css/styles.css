@@ -79,47 +79,50 @@ nav ul li a.active {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center; /* Center-align all elements */
     background: #fff;
-    padding: 20px;
+    padding: 10px; /* Reduced padding */
     border-radius: 8px;
     margin-bottom: 20px;
+    gap: 15px; /* Reduce space between flex items */
 }
 
 .profile-pic {
-    flex: 1 1 150px;
+    flex: 0 1 150px; /* Adjusted size to make it smaller */
     text-align: center;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
 .profile-pic img {
-    width: 150px;
+    width: 150px; /* Smaller image size */
     height: 150px;
-    border-radius: 10%;
-   object-fit: cover;
+    border-radius: 10%; /* Keeps the circular shape */
+    object-fit: cover;
 }
 
 .profile-info {
-    flex: 3 1 300px;
-    padding: 20px;
-}
-
-.profile-info h2 {
-    margin-bottom: 10px;
-    color: #4CAF50;
+    flex: 0 1 auto; /* Dynamically adjusts width */
+    padding: 10px; /* Reduced padding around text */
+    text-align: center;
+    margin-top: -10px; /* Moves closer to the image */
 }
 
 .social-links {
     list-style: none;
     display: flex;
-    gap: 10px;
-    margin: 10px 0;
+    flex-wrap: wrap; /* Wraps links if needed */
+    justify-content: center; /* Center-align links */
+    gap: 8px; /* Reduced gap between links */
+    margin: 10px 0; /* Reduced vertical space */
 }
 
 .social-links li a {
     text-decoration: none;
     color: #4CAF50;
     border: 1px solid #4CAF50;
-    padding: 5px 10px;
+    padding: 4px 8px; /* Reduced padding inside links */
     border-radius: 4px;
+    font-size: 14px; /* Smaller font size */
     transition: background 0.3s, color 0.3s;
 }
 
@@ -127,6 +130,7 @@ nav ul li a.active {
     background: #4CAF50;
     color: #fff;
 }
+
 
 /* Sections */
 section {
@@ -181,11 +185,22 @@ footer {
 @media (max-width: 768px) {
     .profile {
         flex-direction: column;
+        align-items: center; /* Center aligns profile section */
         text-align: center;
     }
 
     .profile-info {
         padding: 10px 0;
+    }
+
+    .social-links {
+        flex-direction: row;
+        flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+        justify-content: center; /* Keeps links centered */
+    }
+
+    .social-links li a {
+        font-size: 12px; /* Slightly smaller font for mobile screens */
     }
 
     nav ul {
